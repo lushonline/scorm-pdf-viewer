@@ -48,6 +48,7 @@ const config = {
     outputFolder: path.join(__dirname, './scorm_packages'),
     description: packageJson.description,
     keywords: [],
+    duration: getReadingTime(pdfDocument),
     typicalDuration: getReadingTime(pdfDocument),
     rights: `©${new Date().getFullYear()} ${packageJson.author.name}. All right reserved.`,
   },
