@@ -1,6 +1,6 @@
 {
     "name": "scorm-pdf-viewer",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "A page for displaying a PDF with basic SCORM tracking.",
     "private": true,
     "main": "src/main.jsx",
