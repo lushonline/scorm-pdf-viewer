@@ -1,0 +1,59 @@
+{
+    "name": "scorm-pdf-viewer",
+    "version": "0.0.0",
+    "description": "A page for displaying a PDF with basic SCORM tracking.",
+    "private": true,
+    "main": "src/main.jsx",
+    "scripts": {
+        "dev": "vite",
+        "prebuild": "npm run lint",
+        "build": "vite build",
+        "preview": "vite preview",
+        "presco": "npm run build",
+        "sco": "node ./scripts/create-sco.mjs",
+        "preversion": "npm run build",
+        "postversion": "git push && git push --tags && npm run changelog && git push && npm run sco",
+        "postinstall": "",
+        "changelog": "rimraf CHANGELOG.md && auto-changelog --template keepachangelog && git add . && git commit . -m changelog && git push",
+        "lint": "eslint . --ext .js,.jsx"
+    },
+    "author": {
+        "name": "Martin Holden",
+        "email": "martin.holden@skillsoft.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/martinholden-skillsoft/scorm-pdf-viewer.git"
+    },
+    "dependencies": {
+        "clsx": "^1.2.1",
+        "pdfjs-dist": "^3.2.146",
+        "pipwerks-scorm-api-wrapper": "^0.1.2",
+        "prop-types": "^15.8.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.27",
+        "@types/react-dom": "^18.0.9",
+        "@vitejs/plugin-react": "^3.0.1",
+        "auto-changelog": "^2.2.0",
+        "autoprefixer": "^10.4.13",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.6.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.32.1",
+        "moment": "^2.29.4",
+        "pdf-lib": "^1.17.1",
+        "postcss": "^8.4.21",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2",
+        "simple-scorm-packager": "^0.2.7",
+        "tailwindcss": "^3.2.4",
+        "vite": "^4.0.4"
+    }
+}
