@@ -18,13 +18,13 @@
         "lint": "eslint . --ext .js,.jsx"
     },
     "author": {
-        "name": "Martin Holden",
-        "email": "martin.holden@skillsoft.com"
-    },
+        "name": "lushonline",
+        "email": "56685070+lushonline@users.noreply.github.com"
+      },
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/martinholden-skillsoft/scorm-pdf-viewer.git"
+        "url": "git+ssh://git@github.com/lushonline/scorm-pdf-viewer.git"
     },
     "dependencies": {
         "clsx": "^1.2.1",
