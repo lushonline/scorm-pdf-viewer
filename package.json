@@ -1,6 +1,6 @@
 {
     "name": "scorm-pdf-viewer",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A page for displaying a PDF with basic SCORM tracking.",
     "private": true,
     "main": "src/main.jsx",
@@ -20,7 +20,7 @@
     "author": {
         "name": "lushonline",
         "email": "56685070+lushonline@users.noreply.github.com"
-      },
+    },
     "license": "MIT",
     "repository": {
         "type": "git",
